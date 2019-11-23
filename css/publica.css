@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Lora';
+    src: url(../fuentes/Lora/Lora-Bold.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    --moz-box-sizing:border-box;
+    box-sizing: border-box;
+    font-family: 'Lora';
+
+}
+/* 
+body{
+    background: url(../img/mascotas-productos.jpg);
+    --webkit-bakground-size:cover;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Lora'
+} */
+
+.contenedor-form{
+    position: relative;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 500px;
+    margin: 48px auto;
+    color:rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+
+}
+
+.contenedor-form .toggle{
+   position: absolute;
+   top:7px;
+   right: 7px;
+   width: 100px;
+   height: 30px;
+   font-size: 12px;
+   line-height: 25px;
+   text-align: center;
+   border-top:2px solid #ffffff;
+   border-bottom: 2px solid #ffffff;
+   transition: all .5s ease;
+   cursor: pointer;
+
+}
+.contenedor-form .toggle span{
+    letter-spacing: 1px;
+}
+
+.contenedor-form .toggle:hover{
+    border-top:2px solid #b00000;
+    border-bottom: 2px solid #b00000;
+}
+.contenedor-form h2{
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.contenedor-form  input[type="text"],
+.contenedor-form  input[type="password"],
+.contenedor-form  input[type="email"]{
+    outline: none;
+    background:rgba(0, 0, 0, 0.24);
+    color:rgba(0, 0, 0, 0.7);;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #ffffff;
+    font-family: 'Lora';
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    transition: all .5s ease;
+}
+.contenedor-form  input[type="text"]:focus,
+.contenedor-form  input[type="password"]:focus,
+.contenedor-form  input[type="email"]:focus{
+    border-bottom: 4px solid #b00000;
+}
+
+.contenedor-form  input[type="submit"]{
+    background: #b00000;
+    color: rgb(255, 255, 255);
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    font-family: 'Lora';
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.contenedor-form  input[type="submit"]:hover{
+    background: #ffffff;
+    color:#b00000;
+}
+
+.contenedor-form .reset-password{
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+.contenedor-form .reset-password a {
+    color:rgba(35, 34, 34, 0.49);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contenedor-form .formulario{
+   padding: 40px;
+   display: none;
+}
+
+
+.contenedor-form .formulario:nth-child(2){
+    display: block;
+}
+

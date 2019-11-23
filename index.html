@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TDEA PUBLICA- Publicaciones Universitarias</title>
+    <link rel="icon" type="image/ico" sizes="16x16 32x32" href="img/star-regular.svg">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/fontello.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+    <div class="padre">
+        <header class="encabezado">
+            <div class="logo" style="padding-left: 92px">
+                <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="social">
+                <div><a href="https://www.facebook.com/"><i aria-hidden="true" class="fab fa-facebook-square"></i></a>
+                </div>
+                <div><a href="https://twitter.com/"><i aria-hidden="true" class="fab fa-twitter-square"></i></a>
+                </div>
+                <div><a href="https://www.instagram.com/"><i aria-hidden="true" class="fab fa-instagram"></i></a>
+                </div>
+                <div><a href="https://web.whatsapp.com/"><i aria-hidden="true" class="fab fa-whatsapp-square"></i></a>
+                </div>
+            </div>
+            <div class="margen-interno">
+                <input type="checkbox" id="btn-menu">
+                <label for="btn-menu" class="icon-menu"> </label>
+                <nav class="menu">
+
+                    <ul>
+                        <li> 
+                            <a href="#" id="inicio" title="Inicio">
+                                <i aria-hidden="true" class="fas fa-home"></i>
+                                <span class="ocultar">Inicio</span>                                
+                            </a>
+                        </li>
+
+
+                        <li class="submenu">
+                            <a href="#" id="quienesSomos" title="Quienes Somos">
+                                <i aria-hidden="true" class="far fa-address-card"></i>
+                                <span class="ocultar">Quienes Somos</span>
+                            </a>
+
+                            <ul>
+                                <li><a href="#" id="mision" style="padding: 6px 47px;">Misión</a></li>
+                                <li><a href="#" id="vision" style="padding: 6px 47px;">Visión</a></li>
+                                <li><a href="#" id="valores" style="padding: 6px 47px;">Valores</a></li>
+                            </ul>
+
+                        </li>
+                        <li>
+                             <a href="#" id="publica" title="Publica">
+                                 <i aria-hidden="true" class="fas fa-paper-plane"></i>
+                                 <span class="ocultar">Publica</span>
+                                
+                            </a>
+                        </li>
+
+                        <li class="submenu">
+                            <a href="#" id="servicios" title="servicios">
+                                <i aria-hidden="true" class="fas fa-tasks"></i>
+                                <span class="ocultar">Servicios</span>
+                            </a>
+
+                            <ul>
+                                <li><a href="#" id="documentos" >Documentos</a></li>
+                                <li><a href="#" id="arriendos" >Arriendos</a></li>
+                                <li><a href="#" id="transporte" >Transporte</a></li>
+                                <li><a href="#" id="otros" >Otros</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li> <a href="#" id="contactenos" title="Contáctenos"><i aria-hidden="true"
+                                    class="fas fa-headset"></i><span class="ocultar">Contáctenos</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="seccion margen-interno">
+            <div class="lateral-izq">
+                <article id="cargar" class="contenido">
+                </article>
+            </div>
+            <aside class="lateral-der">
+                <div class="publicidad">
+                    <h4>Bienvenidos</h4>
+                    <img src="img/publicidad/welcome.jpg" alt="servicios">
+
+                    <button id="btn-abrir-popup" class="btn-abrir-popup">Suscribete!!</button>
+                </div>
+                <div class="publicidad">
+                    <h4>Publicidad</h4>
+                    <img src="img/publicidad/galletas.jpeg" alt="publicidad">
+                    <img src="img/publicidad/vestidos.jpeg" alt="publicidad">
+                </div>
+            </aside>
+        </section>
+    </div>
+    <footer class="piepagina margen-interno">
+        <nav class="pie">
+            <a href="#">&copy; 2019 Todos los derechos reservados</a>
+        </nav>
+    </footer>
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+            <h3>SUSCRIBETE</h3>
+            <h4>y recibe un cupon de descuento.</h4>
+            <form action="">
+                <div class="contenedor-inputs">
+                    <input type="text" placeholder="Nombre completo">
+                    <input type="email" placeholder="Correo electrónico">
+                </div>
+                <input type="submit" class="btn-submit" value="Suscribirse">
+            </form>
+        </div>
+    </div>
+    <!-- <div class="modal">
+        <div class="ventana">
+            <img src="img/slider/apto1.jpg" alt="" />
+            <span class="cerrar">x</span>
+        </div>
+    </div> -->
+
+    <script type="text/javascript" src="js/jquery-1.9.0.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+</body>
+
+</html>
