@@ -46,16 +46,18 @@ $(document).ready(function() {
         $('#cargar').load('./archivos/documentos.html');        
     }); 
 
-    $(".submenu").click(function(stopSlide){
-        stopSlide.stopPropagation();
-        $(this).children("ul").slideToggle();
+    // $(".submenu").click(function(){  
+    //     $(this).children("ul").slideToggle('slow');
+    //   });
+
+    //   $(".submenu").click(function(){
+    //     $(this).children("ul").slideUp();
+    //   });
+        $("#submenu").click(function(){  
+        $(this).children("ul").show('slow');
       });
 
       $("ul").click(function(stopSlide){
-        stopSlide.stopPropagation();
-      });
-
-      $("ul").hover(function(stopSlide){
         stopSlide.stopPropagation();
       });
 

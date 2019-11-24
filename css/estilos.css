@@ -21,9 +21,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    /* z-index: 99999; */
-    z-index: 2;
-
+    z-index: 99999; 
 }
 
 .encabezado {
@@ -373,6 +371,7 @@ button.btn-abrir-popup:hover {
     justify-content: center;
     display: flex;
     visibility: hidden;
+    z-index: 99999;
 }
 
 .overlay.active {
@@ -636,9 +635,9 @@ button.btn-abrir-popup:hover {
     width: 500px;
     height: 100%;
     max-width: 100%;
-    box-sizing: border-box;
+    /* box-sizing: border-box;
     -webkit-border-radius: 28px 28px 28px 28px;
-    border: 0px solid #000000;
+    border: 0px solid #000000; */
 
 }
 

@@ -11,58 +11,35 @@
 </head>
 
 <body>
-<div class="contenedor">
-    <form action="" class="form">
-        <div class="form-header">
-            <h1 class="form-title">Contacto</h1>
-        </div>
+    <div class="contenedor">
+        <form action="" class="form" id="form-contactenos" name="form-contactenos" enctype="multipart/form-data"
+            onsubmit="return validar();">
+            <div class="form-header">
+                <h1 class="form-title">Contacto</h1>
+            </div>
 
-        <label for="nombre" class="form-label"> Nombres:</label>
-        <input type="text" class="form-input" id="nombre" placeholder="Escriba su nombre">
+            <label for="nombre" class="form-label"> Nombres:</label>
+            <input type="text" class="form-input" id="nombre" placeholder="Escriba su nombre">
 
-        <label for="direccion" class="form-label"> Dirección:</label>
-        <input type="text" class="form-input" id="direccion" placeholder="Escriba su dirección">
+            <label for="direccion" class="form-label"> Dirección:</label>
+            <input type="text" class="form-input" id="direccion" placeholder="Escriba su dirección">
 
-        <label for="correo" class="form-label"> Correo Electrónico:</label>
-        <input type="text" class="form-input" id="correo" placeholder="Escriba su correo">
+            <label for="correo" class="form-label"> Correo Electrónico:</label>
+            <input type="text" class="form-input" id="correo" placeholder="Escriba su correo">
 
-        <label for="mensaje" class="form-label"> Mensajes:</label>
-        <textarea type="text" class="form-input" id="mensaje" placeholder="Aquí escriba su mensaje"></textarea>
+            <label for="mensaje" class="form-label"> Mensajes:</label>
+            <textarea type="text" class="form-input" id="mensaje" placeholder="Aquí escriba su mensaje"></textarea>
 
-        <input type="submit" class="btn-submit" value="Enviar Consulta">
-    </form>
-
-</div>
-
-
-
-
-
-    <!-- <article>
-        <header>
-            <hgroup>               
-              <h2 class="sub-titulos">TdeA Publica</h2>
-            </hgroup>
-        </header>
-        <p class="texto">
-            Para nosotros es muy importante su opinión, por eso sí tienes alguna duda o inquietud dejanos tu mensaje.
-        </p>
-    </article>
-    <section id="seccion-form-contactenos">
-        <form id="form-contactenos" name="form-contactenos" enctype="multipart/form-data" onsubmit="return validar();">
-            <h1 class="titulo-form-contactenos">Deja tu inquietud</h1>
-            <input class="input-form-contactenos" type="text" name="nombreContactenos" id="nombreContactenos" placeholder="Nombre(s)">
-            <input class="input-form-contactenos" type="text" name="apellidosContactenos" id="apellidosContactenos" placeholder="Apellido(s)">
-            <input class="input-form-contactenos" type="email" name="emailContactenos" id="emailContactenos" placeholder="Correo Electrónico">
-            <input class="input-form-contactenos" type="tel" name="telefonoContactenos" id="telefonoContactenos" placeholder="Numero Contacto">
-            <input class="input-form-contactenos" type="text" name="direccionContactenos" id="direccionContactenos" placeholder="Dirección">
-            <textarea class="textarea-form-contactenos" name="descripcionContactenos" id="descripcionContactenos" placeholder="Escriba su Inquietud"></textarea>
-            <input class="submit-form-contactenos" type="submit" name="enviarContactenos" id="enviarContactenos" value="Enviar">
+            <input type="submit" class="btn-submit" value="Enviar Consulta" name="enviarContactenos"
+                id="enviarContactenos">
         </form>
-    </section> -->
+
+    </div>
     <h1 class="titulos">Como Llegar...</h1>
     <div class="map-responsive">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.323972755675!2d-75.58273218476893!3d6.220941395496734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429ce90055eff%3A0x62b4d869bcb04d01!2sCl.+18+%2352-33%2C+Medell%C3%ADn%2C+Antioquia!5e0!3m2!1ses!2sco!4v1558554678313!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.323972755675!2d-75.58273218476893!3d6.220941395496734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429ce90055eff%3A0x62b4d869bcb04d01!2sCl.+18+%2352-33%2C+Medell%C3%ADn%2C+Antioquia!5e0!3m2!1ses!2sco!4v1558554678313!5m2!1ses!2sco"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
     <script type="text/javascript" src="js/validaciones.js"></script>
 </body>

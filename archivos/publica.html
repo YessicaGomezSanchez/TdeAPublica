@@ -12,24 +12,26 @@
     <div class="contenedor-form">
         <div class="toggle">
             <span> Crear cuenta</span>
-        </div>
+        </div>       
         <div class="formulario">
             <h2>Iniciar sesión</h2>
-            <form action="#">
-                <input type="text" placeholder="Usuario" required>
-                <input type="password" placeholder="Contraseña" required>
-                <input type="submit" value="Inicar sesión">
+            <form action="#"  id="form-login" name="form-login" enctype="multipart/form-data"
+            onsubmit="return validarLogin();">
+                <input type="text" placeholder="Usuario" id="usuario">
+                <input type="password" placeholder="Contraseña" id="contrasena">
+                <input type="submit" value="Inicar sesión" name="enviarLogin" id="enviarLogin">
             </form>
         </div>
 
         <div class="formulario">
             <h2>Crear tu cuenta</h2>
-            <form action="#">
-               <input type="email" placeholder="Correo Electrónico" required>
-                <input type="text" placeholder="Teléfono">
-                <input type="text" placeholder="Usuario" required>
-                <input type="password" placeholder="Contraseña" required>
-                <input type="submit" value="Registrarse">
+            <form action="#" id="form-crear" name="form-crear" enctype="multipart/form-data"
+            onsubmit="return validarCrear();">
+               <input type="text" placeholder="Correo Electrónico" id="correo">
+                <input type="text" placeholder="Teléfono" id="telefono">
+                <input type="text" placeholder="Usuario" id="usuarioC">
+                <input type="password" placeholder="Contraseña" id="contrasenaC">
+                <input type="submit" value="Registrarse" name="enviarCrear" id="enviarCrear">
             </form>
         </div>
 
