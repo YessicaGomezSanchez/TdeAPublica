@@ -1,20 +1,22 @@
+var changeText = false;
+var elementAction = document.getElementById('element-action');
+elementAction.innerText = 'Crear cuenta';
+
 $('.toggle').click(function () {
-	
+	changeText = !changeText;
+
+	if (changeText) {
+		elementAction.innerText = 'Iniciar Sesión';
+	} else {
+		elementAction.innerText = 'Crear cuenta';
+	}
+
     $('.formulario').animate({        
         height: "toggle",
         'paddin-top': 'toggle',
         'padding-bottom': 'toggle',
 		opacity: 'toggle'		
-	},"slow");
-
-	// var textoSpan = $('span.text').text();
-	// if(textoSpan=="Crear cuenta"){
-	// 	console.log("valor...............",textoSpan);
-	// 	$('.texto').text( $(this).val('Iniciar sesión') );
-	// }else if(textoSpan=="Iniciar sesión"){
-	// 	$('.texto').text( $(this).val('Crear cuenta') );
-	// };
-	
+	},"slow");	
 });
 
 
